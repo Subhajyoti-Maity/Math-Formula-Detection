@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+.virtualenv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Models (large files - should be downloaded separately)
+Models/*.pth
+Models/*.ts
+Models/*.pt
+Models/*.onnx
+Models/*.bin
+
+# Keep config files
+!Models/config.yaml
+!Models/tokenizer.json
+
+# Output directories
+extracted_output_*/
+output/
+results/
+temp/
+
+# Image datasets (can be large)
+ICDAR2019/images/
+ICDAR2021/images/
+
+# Keep label files but ignore images
+!ICDAR2019/labels/
+!ICDAR2021/labels/
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+temp_*
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+
+# Docker
+.dockerignore
